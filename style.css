@@ -797,7 +797,10 @@ section {
   padding: 10px;
   border-radius: 0.5rem;
 }
-
+.e-mail{
+  color: white;
+  font-weight: 600;
+}
 
 
 
