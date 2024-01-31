@@ -6,250 +6,224 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+  <script src="https://kit.fontawesome.com/ea2da59721.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-    <nav class="navbar">
-      <a href="#home" style="--i:1" class="active">Home</a>
-      <a href="#about"style="--i:2">About</a>
-      <a href="#services"style="--i:3">Skills</a>
-      <a href="#skills"style="--i:4">Portfolio</a>
-      <a href="#contact"style="--i:5">Contact</a>
-    </nav>
-  </header>
-  <section class="home">
-    <div class="home-content">
-      <h3>Hello, Its me</h3>
-      <h1>Abhishek Saini</h1>
-      <h3>And I am a <span class="text"></span></h3>
-      <p>I'm a passionate Full Stack Developer skilled in HTML, CSS, JavaScript, <br>DSA, and Java. I'm dedicated to creating efficient, user-friendly <br>web applications and currently expanding my backend development expertise.
-      </p>
-      <div class="home-sci">
-        <a href="https://www.linkedin.com/in/abhishek-saini-6857b31ab/" target="_blank" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100010775701465" target="_blank" style="--i:8"><i class='bx bxl-facebook' ></i></a>
-        <a href="https://github.com/Abhishe3110/Abhishe3110" target="_blank" style="--i:9"><i class='bx bxl-github' ></i></a>
-        <a href="https://twitter.com/abhishek_sa_ini" target="_blank" style="--i:10"><i class='bx bxl-twitter' ></i></a>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="img/logo1.png" alt="" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="small fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="small fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I Am <span>Abhishek</span><br>I am a Developer</h1>
       </div>
-      <a href="" class="btn-box">More About me</a>
+      <!-- <div class="img"><img src="img/background.png" alt=""></div> -->
     </div>
-    <span class="home-imgHover"></span>
-    <div class="my_pic">
-      <span>
-        <img src="./Images/20230205_173724.jpg" alt="">
-      </span>
-    </div>
-  </section>
-  
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="./Images/20230205_173724.jpg" alt="">
-    </div>
-    <div class="about-text">
-      <h2>About <span>Me</span></h2>
-      <h4>Full Stack Developer</h4>
-      <p>I am a passionate and versatile Full Stack Developer on a continuous  journey of learning and growth. My technical expertise spans front-end and back-end development, with proficiency in HTML, CSS, JavaScript, Data Structures and Algorithms, and Java. I have a proven track record of creating innovative and impactful web applications, and I am currently expanding my skill set in backend development.</p>
-      <a href="#" class="btn-box">More About Me</a>
-    </div>
-    
-  </section>
-  <section class="services" id="services">
-   <div class="container">
-    <h1 class="sub-title">My <span>Services</span></h1>
-    <div class="services-list">
-      <div>
-        <i class='bx bx-code' style='color:#00eeff'  ></i>
-        <h2>UI/UX Design</h2>
-        <p>Welcome to my UI/UX design portfolio, where creativity meets functionality. I specialize in crafting seamless and intuitive digital experiences that delight users and drive results. With a passion for user-centered design, I take pride in turning complex problems into elegant, user-friendly solutions.</p>
-        <a href="#" class="read">learn more</a>
-      </div>
-      <div>
-        <i class='bx bx-crop' style='color:#00eeff' ></i>
-        <h2>UI/UX Design</h2>
-        <p>My design process begins with in-depth research, user personas, and wireframing to ensure every project meets its goals. I collaborate closely with developers to guarantee seamless integration and exceptional final products.</p>
-        <a href="#" class="read">learn more</a>
-      </div>
-      <div>
-        <i class='bx bxl-apple' style='color:#00eeff' ></i>
-        <h2>UI/UX Design</h2>
-        <p>UI Design: I create visually appealing interfaces with a focus on usability and accessibility. <br>
-          UX Design: I prioritize intuitive user journeys and seamless interactions. 
-          Prototyping: Early validation through prototypes and usability testing for refinement. <br>
-          Responsive Design: Ensuring designs look great on all devices.</p>
-        <a href="#" class="read">learn more</a>
-      </div>
-    </div>
-   </div>
-  </section>
-  <h1 class="sub-title">My <span>Skills</span></h1>
-  <section class="skill-section">
-    <div class="container1" id="skills">
-      <h1 class="heading1">Technical Skills</h1>
-      <div class="Technical-bars">
-        <div class="bar"><i class='bx bxl-html5' style="color: #c95d2e;"></i>
-          <div class="info">
-            <span>HTML</span>
-          </div>
-          <div class="progress-line html">
-           <span></span>
-          </div>
-        </div>
-        <div class="bar"><i class='bx bxl-css3' style="color: #147bbc"></i>
-          <div class="info">
-            <span>CSS</span>
-          </div>
-          <div class="progress-line css">
-           <span></span>
-          </div>
-        </div>
-        <div class="bar"><i class='bx bxl-javascript' style="color: #b0bc1e"></i>
-          <div class="info">
-            <span>JavaScript</span>
-          </div>
-          <div class="progress-line javascript">
-           <span></span>
-          </div>
-          </div>
-        <div class="bar"><i class='bx bxl-java' style="color: white"></i>
-          <div class="info">
-            <span>Java</span>
-          </div>
-          <div class="progress-line python">
-           <span></span>
-          </div>
-        </div>
-        <div class="bar"><i class='bx bxs-data'></i></i>
-          <div class="info">
-            <span>Data Structures</span>
-          </div>
-          <div class="progress-line react">
-           <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container1 skill-bar">
-      <h1 class="heading1" id="heading">Professional<span>&nbsp;Skills</span></h1>
-      <div class="radial-bars skill-bar">
 
-        <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox = "0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80">
-          </circle>
-          <circle class="path path-1" cx="100" cy="100" r="80">
-          </circle>
-        </svg>
-      
-        <div class="percentage">90%</div>
-        <div class="text">creativity</div>
-      </div>
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox = "0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80">
-          </circle>
-          <circle class="path path-2" cx="100" cy="100" r="80">
-          </circle>
-        </svg>
-      
-        <div class="percentage">65%</div>
-        <div class="text">Communication</div>
-      </div>
-      
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox = "0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80">
-          </circle>
-          <circle class="path path-3" cx="100" cy="100" r="80">
-          </circle>
-        </svg>
-        <div class="percentage">75%</div>
-        <div class="text">Problem Solving</div>
-      </div>
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox = "0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80">
-          </circle>
-          <circle class="path path-4" cx="100" cy="100" r="80">
-          </circle>
-        </svg>
-        <div class="percentage">85%</div>
-        <div class="text">Teamwork</div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div id="portfolio" id = "project">
-      <div class="main-text" id="project">
-        <h2>Latest <span>Projects</span></h2>
-        <div class="portfolio-content">
-          <div class="row">
-            <img src="./Images/istockphoto-879947168-612x612.jpg" alt="">
-            <div class="layer">
-              <h5>UI/UX Design</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore totam perspiciatis, quo magni mollitia odit doloremque ad sequi! Possimus.</p>
-              <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-            </div>
-          </div>
-          <div class="row">
-            <img src="https://media.istockphoto.com/id/1341866705/vector/web-design-and-layout-wireframe.jpg?s=612x612&w=0&k=20&c=WOmN5J6xQnxnGJ2jaMpCYzMVb-JC67iZfSKk4I54KNc=" alt="">
-            <div class="layer">
-              <h5>UI/UX Design</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore totam perspiciatis, quo magni mollitia odit doloremque ad sequi! Possimus.</p>
-              <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-            </div>
-          </div>
-          <div class="row">
-            <img src="https://media.istockphoto.com/id/1189378904/vector/mobile-apps-creation-of-a-mobile-application-web-page-created-from-separate-blocks-user.jpg?s=612x612&w=0&k=20&c=HIiI8lu3-_-IhUS-Jj20zw0AS-w1FIKXGn_l4qdHAzQ=" alt="">
-            <div class="layer">
-              <h5>UI/UX Design</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore totam perspiciatis, quo magni mollitia odit doloremque ad sequi! Possimus.</p>
-              <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="contact-text">
-      <h2>Contact <span>Me</span></h2>
-      <h4>Let's work together</h4>
-      <p>Let's Connect
-
-        I'm eager to collaborate and bring your ideas to life. Whether you have a project in mind or just want to chat, I'm here for you. Drop me a line using the form below or email me at <span class="e-mail">Abhisheksa782@gmail</span>. Can't wait to hear from you!</p>
-      <div class="contact-list">
-        <li><i class='bx bx-mail-send' style="color: #00eeff;"></i></i>&nbsp; Abhisheksa782@gmail</li>
-        <li><i class='bx bxs-phone-call' ></i>&nbsp; 9719652665</li>
-      </div>
-      <div class="contact-icons">
-       <a href="https://www.linkedin.com/in/abhishek-saini-6857b31ab/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-       <a href="https://www.facebook.com/profile.php?id=100010775701465" target="_blank"><i class='bx bxl-facebook' ></i></a>
-       <a href="https://github.com/Abhishe3110/Abhishe3110" target="_blank"><i class='bx bxl-github' ></i></a>
-       <a href="https://twitter.com/abhishek_sa_ini" target="_blank"><i class='bx bxl-twitter' ></i></a>
-      </div>
-    </div>
-    <div class="contact-form">
-      <form action="">
-        <input type="text" placeholder="Enter your name" required>
-        <input type="email" placeholder="Enter your Email" required>
-        <input type="text" name="" id=""placeholder ="Enter you subject">
-        <textarea name="" id="" cols="40" rows="10" placeholder="Your message"></textarea>
-        <input type="submit" value="Submit" class="send">
-      </form>
-    </div>
-  </section>
-  <div class="last-text">
-    <p>Developed with love by Abhishek Saini © 2023</p>
   </div>
-  <a href="" class="top"><i class='bx bx-up-arrow-alt' undefined ></i></a>
-  <script src="main.js"></script>
+  <!-- about section  -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>I am a passionate and versatile Full Stack Developer on a continuous journey of learning and growth. My technical expertise spans front-end and back-end development, with proficiency in HTML, CSS, JavaScript, Data Structures and Algorithms, and Java. I have a proven track record of creating innovative and impactful web applications, and I am currently expanding my skill set in backend development.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+              <li><span>Web Development</span><br>HTMYL, CSS,JavaScript</li>
+              <li><span>App Development X</span><br>Building Android/IOS</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022-Current</span><br>UI?UX Design training at Coding Ninjas</li>
+              <li><span>2021-22</span><br>Student at IIMT Saharanpur</li>
+              <li><span>2020-21</span><br>IIT JEE Preperaton at Self Study</li>
+            </ul>
+          </div>
+          <div class="tab-contents " id="education">
+            <ul>
+              <li><span>2017-18</span><br>High School from St Marks Academy</li>
+              <li><span>2019-20</span><br>Senior High School at Roorkee Public School</li>
+              <li><span>2012-17</span><br>Junior Schooling at Surya Academy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services -->
+  <div id="services">
+    <div class="container ">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Immersed in the world of website design, I strive to craft digital landscapes that are not just visually striking but also intuitively functional. With a keen eye for aesthetics and a passion for seamless user experiences, I transform ideas into captivating online realities. Let's bring your vision to life with a touch of creativity and sophistication in the digital realm.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>UI Design: I create visually appealing interfaces with a focus on usability and accessibility. <br>
+            UX Design: I prioritize intuitive user journeys and seamless interactions. Prototyping: Early validation through prototypes and usability testing for refinement.
+            Responsive Design: Ensuring designs look great on all devices.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Diving into the realm of app design, I orchestrate digital experiences that are both elegant and user-centric. Each app is a story waiting to unfold, where seamless design meets functional brilliance. My passion lies in crafting apps that not only look stunning but also delight users with intuitive interactions. Let's collaborate to bring your app vision to life, creating a digital masterpiece that users will love.</p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="img/work-1.png" alt="">
+          <div class="layer">
+            <h3>E-Commerce App</h3>
+            <p>Developed a feature-rich-Amazon using
+              HTML, CSS, JavaScript incorporating
+              essential functionalities. Implemented
+              features such as add-to-cart to-do list Order
+              tracking and cart Management showcasing
+              a strong grasp of frontend development and
+              interactive user experience.</p>
+            <a href="https://abhishe3110.github.io/javascript-amazon-project/amazon.html" target="_blank"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/work-2.png" alt="">
+          <div class="layer">
+            <h3>Streaming App</h3>
+            <p>Developed a Netflix-style streaming
+              platform with an extensive movie collection
+              and seamless instant trailer previews.
+              Leveraged TMDB API for content selection,
+              and crafted the platform using HTML, CSS,
+              and JavaScript. Ensured full responsiveness
+              for a user-friendly experience .</p>
+            <a href="https://abhishe3110.github.io/netlfixs-clone/index.html?" target="_blank"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/work-3.png" alt="">
+          <div class="layer">
+            <h3>Portfolio App</h3>
+            <p>Created a Visually appealing portfolio
+              website utilizing HTML, CSS and JavaScript,
+              enriched with engaging Animations. The
+              Website serves as a showcase of my
+              projects and skills demonstrating my
+              profiency in web development and Design.</p>
+            <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square" target="_blank"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- Contact section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-sharp fa-regular fa-envelope"></i>Abhisheksa782@gmail.com</p>
+
+          <p><i class="fa-solid fa-phone-volume"></i>9719652665</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/abhishek-saini-6857b31ab/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Abhishe3110" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100010775701465" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/abhi_saini3110/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/abhishek_sa_ini" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
+          </div>
+          <a href="img/ABHISHEK-SAINI.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <input type="number" name="Phone" placeholder="Enter your phone" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; made with <i class="fa-solid fa-heart"></i> by Abhishek Saini</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    let sidemenu = document.getElementById('sidemenu');
+    function openmenu() {
+      sidemenu.style.right = '0';
+    }
+    function closemenu() {
+      sidemenu.style.right = '-200px';
+    }
+  </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxSt2Lvm5RRPpKv8AZW0tHqTM5whQ-cVd4-UWjdUia7kwfLRlsgxIBfk1V5VHV2FHuRng/exec';
+const form = document.forms['submit-to-google-sheet'];
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      // Check if the response status is successful (e.g., 200 OK)
+      if (response.ok) {
+        // Show success alert
+        alert('Form Submitted Successfully');
+        
+        // Reset the form
+        form.reset();
+      } else {
+        // Handle other response statuses if needed
+        console.error('Error:', response.statusText);
+      }
+    })
+    .catch(error => {
+      // Handle fetch errors
+      console.error('Error!', error.message);
+    });
+});
+
+</script>
 </body>
 
 </html>
